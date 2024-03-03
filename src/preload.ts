@@ -1,6 +1,11 @@
 import * as fs from 'fs';
 import * as path from 'path';
 
+const USERNAME = "MortallicaXxX";
+const TOKEN = "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"
+
+process.env.GIT_CREDENTIALS = `${USERNAME}:${TOKEN}`;
+
 export const cwdPath = (process.env.PWD ? process.env.PWD : process.cwd());
 
 export type VersionManagerConfig = {
